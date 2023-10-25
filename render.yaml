@@ -2,7 +2,7 @@ services:
   - type: web
     name: n8n
     env: docker
-    region: oregon # optional (defaults to oregon)
+    region: frankfurt # optional (defaults to oregon)
     plan: standard # optional (defaults to starter)
     branch: main # optional (defaults to master)
     # dockerCommand: ./webdis.sh # optional (defaults to Dockerfile command)
@@ -10,30 +10,20 @@ services:
     healthCheckPath: /
     envVars:
       - key: PGHOST
-        fromDatabase:
-          name: n8nDB
-          property: host
+        value: ${DB_POSTGRESDB_HOST}  # Use the host from .env
       - key: PGDATABASE
-        fromDatabase:
-          name: n8nDB
-          property: database
+        value: ${DB_POSTGRESDB_DATABASE}  # Use the database name from .env
       - key: PGPORT
-        fromDatabase:
-          name: n8nDB
-          property: port
+        value: ${DB_POSTGRESDB_PORT}  # Use the port from .env
       - key: PGUSER
-        fromDatabase:
-          name: n8nDB
-          property: user
+        value: ${DB_POSTGRESDB_USER}  # Use the username from .env
       - key: PGPASSWORD
-        fromDatabase:
-          name: n8nDB
-          property: password
+        value: ${DB_POSTGRESDB_PASSWORD}  # Use the password from .env
     disk:
       name: n8nDisk
       mountPath: /home/node/.n8n
       sizeGB: 10
 
-databases:
-  - name: n8nDB
-    plan: starter
+#databases:
+#  - name: n8nDB
+#    plan: starter
