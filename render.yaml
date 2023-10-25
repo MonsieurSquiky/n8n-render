@@ -3,7 +3,7 @@ services:
     name: n8n
     env: docker
     region: frankfurt # optional (defaults to oregon)
-    plan: standard # optional (defaults to starter)
+    plan: free # optional (defaults to starter)
     branch: main # optional (defaults to master)
     # dockerCommand: ./webdis.sh # optional (defaults to Dockerfile command)
     numInstances: 1
@@ -19,10 +19,10 @@ services:
         value: postgres  # Use the username from .env
       - key: PGPASSWORD
         value: JO32FBJTIE2ODudX  # Use the password from .env
-    disk:
-      name: n8nDisk
-      mountPath: /home/node/.n8n
-      sizeGB: 1
+ #   disk:
+ #     name: n8nDisk
+ #     mountPath: /home/node/.n8n
+ #     sizeGB: 1
 
 #databases:
 #  - name: n8nDB
