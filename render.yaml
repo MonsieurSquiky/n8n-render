@@ -10,15 +10,15 @@ services:
     healthCheckPath: /
     envVars:
       - key: PGHOST
-        value: ${DB_POSTGRESDB_HOST}  # Use the host from .env
+        value: db.mqpgfbsvlbrlscnrlwix.supabase.co  # Use the host from .env
       - key: PGDATABASE
-        value: ${DB_POSTGRESDB_DATABASE}  # Use the database name from .env
+        value: postgres  # Use the database name from .env
       - key: PGPORT
-        value: ${DB_POSTGRESDB_PORT}  # Use the port from .env
+        value: 5432  # Use the port from .env
       - key: PGUSER
-        value: ${DB_POSTGRESDB_USER}  # Use the username from .env
+        value: postgres  # Use the username from .env
       - key: PGPASSWORD
-        value: ${DB_POSTGRESDB_PASSWORD}  # Use the password from .env
+        value: JO32FBJTIE2ODudX  # Use the password from .env
     disk:
       name: n8nDisk
       mountPath: /home/node/.n8n
