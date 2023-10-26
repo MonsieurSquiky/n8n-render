@@ -19,6 +19,8 @@ services:
         value: postgres  # Use the username from .env
       - key: PGPASSWORD
         value: JO32FBJTIE2ODudX  # Use the password from .env
+      - key: N8N_ENCRYPTION_KEY
+        value: MdRRn2jiZuVeh5tI77A6
  #   disk:
  #     name: n8nDisk
  #     mountPath: /home/node/.n8n
