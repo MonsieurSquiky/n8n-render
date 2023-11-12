@@ -8,19 +8,6 @@ services:
     # dockerCommand: ./webdis.sh # optional (defaults to Dockerfile command)
     numInstances: 1
     healthCheckPath: /
-    envVars:
-      - key: PGHOST
-        value: db.mqpgfbsvlbrlscnrlwix.supabase.co  # Use the host from .env
-      - key: PGDATABASE
-        value: postgres  # Use the database name from .env
-      - key: PGPORT
-        value: 5432  # Use the port from .env
-      - key: PGUSER
-        value: postgres  # Use the username from .env
-      - key: PGPASSWORD
-        value: JO32FBJTIE2ODudX  # Use the password from .env
-      - key: N8N_ENCRYPTION_KEY
-        value: MdRRn2jiZuVeh5tI77A6
  #   disk:
  #     name: n8nDisk
  #     mountPath: /home/node/.n8n
