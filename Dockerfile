@@ -1,8 +1,9 @@
 FROM n8nio/n8n:ai-beta
 
-# Set the working directory to /n8n/packages/nodes-base
-WORKDIR /n8n/packages/nodes-base
+# Install Cheerio and Turndown globally using npm
+RUN npm install cheerio turndown -g
 
-# Add Cheerio and Turndown to package.json and install them
-RUN npm install cheerio turndown
+# Set the environment variables
+# You may need to set NODE_FUNCTION_ALLOW_EXTERNAL to allow the use of these external modules
+ENV NODE_PATH=/usr/local/lib/node_modules
 
