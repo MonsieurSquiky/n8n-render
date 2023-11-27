@@ -1,7 +1,12 @@
 FROM n8nio/n8n:ai-beta
-ENV NODE_PATH=/usr/local/lib/node_modules/n8n
-# Set the working directory to /n8n/packages/nodes-base
-WORKDIR /usr/local/lib/node_modules/n8n
+ENV NODE_PATH=/usr/src/cache
+# Create and define the node_modules's cache directory.
+RUN mkdir /usr/src/cache
+WORKDIR /usr/src/cache
+
+# Install the application's dependencies into the node_modules's cache directory.
+COPY package.json ./
+COPY package-lock.json ./
 
 # Add Turndown to package.json and install them
 RUN npm install turndown
