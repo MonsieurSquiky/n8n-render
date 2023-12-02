@@ -6,6 +6,7 @@ RUN apk add ffmpeg
 # Add ethers and fluent-ffmpeg to package.json and install them
 RUN npm install -g fluent-ffmpeg
 RUN npm install -g ethers
+RUN npm install -g @tryfabric/martian
 
 
 
