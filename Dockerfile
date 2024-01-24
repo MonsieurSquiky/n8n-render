@@ -7,6 +7,6 @@ RUN apk add ffmpeg
 RUN npm install -g fluent-ffmpeg
 RUN npm install -g ethers
 RUN npm install -g @tryfabric/martian
-
+RUN npm install -g jimp
 
 
