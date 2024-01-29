@@ -8,5 +8,5 @@ RUN npm install -g fluent-ffmpeg
 RUN npm install -g ethers
 RUN npm install -g @tryfabric/martian
 RUN npm install -g jimp
-RUN npm install -g gifencoder
+RUN npm install -g sharp
 
