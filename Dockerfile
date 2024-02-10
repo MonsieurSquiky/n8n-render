@@ -9,4 +9,4 @@ RUN npm install -g ethers
 RUN npm install -g @tryfabric/martian
 RUN npm install -g jimp
 RUN npm install -g sharp
-
+RUN npm install -g js-yaml
