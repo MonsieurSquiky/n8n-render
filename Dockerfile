@@ -5,7 +5,7 @@ RUN apk add ffmpeg
 
 # Add ethers and fluent-ffmpeg to package.json and install them
 RUN npm install -g fluent-ffmpeg
-RUN npm install -g ethers@latest
+RUN npm install -g ethers@5.7.2
 RUN npm install -g @tryfabric/martian
 RUN npm install -g jimp
 RUN npm install -g sharp
