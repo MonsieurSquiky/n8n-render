@@ -1,4 +1,4 @@
-FROM n8nio/n8n:1.27.3
+FROM n8nio/n8n:1.31.0
 USER root
 RUN apk update && apk upgrade
 RUN apk add ffmpeg
