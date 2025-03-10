@@ -11,3 +11,4 @@ RUN npm install -g jimp
 RUN npm install -g sharp
 RUN npm install -g js-yaml
 RUN npm install libphonenumber-js --save
+RUN npm install pdf-parse
