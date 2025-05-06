@@ -14,3 +14,5 @@ RUN npm install libphonenumber-js --save
 RUN npm install -g pdf-parse
 RUN npm install -g pdf-lib
 RUN npm install -g @xenova/transformers
+RUN npm install -g zod
+
