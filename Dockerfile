@@ -3,7 +3,7 @@ USER root
 RUN apk update && apk upgrade
 RUN apk add ffmpeg
 
-# Add ethers and fluent-ffmpeg to package.json and install them
+# Add libs to package.json and install them. Remember to update NODE_FUNCTION_ALLOW_EXTERNAL env var to allow n8n to use them in code node
 RUN npm install -g fluent-ffmpeg
 RUN npm install -g ethers@5.7.2
 RUN npm install -g @tryfabric/martian
