@@ -16,3 +16,4 @@ RUN npm install -g pdf-lib
 RUN npm install -g @xenova/transformers
 RUN npm install -g zod
 RUN npm install -g puppeteer-core@21
+RUN npm install -g @modelcontextprotocol/sdk
