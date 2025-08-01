@@ -2,6 +2,7 @@ FROM n8nio/n8n:latest
 USER root
 RUN apk update && apk upgrade
 RUN apk add ffmpeg
+RUN apk add yt-dlp
 
 # Add libs to package.json and install them. Remember to update NODE_FUNCTION_ALLOW_EXTERNAL env var to allow n8n to use them in code node
 RUN npm install -g fluent-ffmpeg
