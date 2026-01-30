@@ -19,3 +19,4 @@ RUN npm install -g @modelcontextprotocol/sdk
 RUN npm install -g pg
 RUN npm install -g xlsx
 RUN npm install -g @tiptap/static-renderer @tiptap/starter-kit @tiptap/core @tiptap/pm
+RUN npm install -g prosemirror-markdown prosemirror-model
